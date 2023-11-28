@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using BlazorStrap;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace MagstimEMGTestApp
@@ -15,6 +16,7 @@ namespace MagstimEMGTestApp
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddWpfBlazorWebView();
             serviceCollection.AddBlazorWebViewDeveloperTools();
+            serviceCollection.AddBlazorStrap();
             Resources.Add("services", serviceCollection.BuildServiceProvider());
             WindowState = WindowState.Maximized;
         }

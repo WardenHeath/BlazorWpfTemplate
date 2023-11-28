@@ -1,14 +1,47 @@
-﻿<h1>Counter</h1>
+﻿@using BlazorStrap.V5
+<BSContainer style="height:98%;border:1px solid #00aeff;padding:10px;">
+    <BSContainer Class="p-01">
+    <BSRow Justify="Justify.Center">
+        <BSCol Column="6">
+            <h1>ATMS State Machine Experiment</h1>
+        </BSCol>
+    </BSRow>
+    <BSRow>
+        <BSCol Column="2">
+        Controls:
 
-<p>Current count: @currentCount</p>
+        </BSCol>
+        <BSCol Column="2">
+            <BSButton Color="BlazorStrap.BSColor.Primary">Start</BSButton>
+        </BSCol>
+        <BSCol Column="2">
+            <BSButton Color="BlazorStrap.BSColor.Warning">Stop</BSButton>
+        </BSCol>
+    </BSRow>
+    <BSRow>
+        State machine Info
+    </BSRow>
+    <BSRow>
+        timer
+    </BSRow>
+    <BSRow>
+        stage 1
+    </BSRow>
+    <BSRow>
+        stage 1 history
+    </BSRow>
+    <BSRow>
+        stage 2
+    </BSRow>
+    <BSRow>
+        stage 2 history
+    </BSRow>
+    <BSRow>
+        stage 3
+    </BSRow>
+    <BSRow>
+        stage 3 history
+    </BSRow>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
-
-@code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-}
+    </BSContainer>
+</BSContainer>
